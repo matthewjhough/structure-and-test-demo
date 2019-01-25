@@ -1,12 +1,20 @@
 import React from 'react';
-import Additions from './Additions';
+import Additions from '../Additions';
 import { render, shallow } from 'enzyme';
 import { headers, body, headers2, body2 } from '../__mocks__';
+
+// STEP 1: create a method that adds 2 + 2, and sets state 'sum' property to result.
+
+// STEP 2: convert method to accept 2 numbers and adds them together, and then sets state 'sum' to result
+
+// STEP 3: take the excel data, and add the body values together.
 
 describe('<Additions />', () => {
   it('Renders without throwing an error.', () => {
     render(<Additions />);
   });
+
+  // Integration
 
   // This test doesn't care about any state or method besides that when you call addTwoPlusTwo, you're getting
   // a value other components probably depend on.
@@ -20,11 +28,11 @@ describe('<Additions />', () => {
     // expect(additions.find('whatever-element').length).toBe(1)
   });
 
-  // STEP 1: create a method that adds 2 + 2, and sets state 'sum' property to result.
+  // After you modify everything to handle excel and n array values of adding,
+  // you simply check the callback with the ultimate addition value you're
+  // looking for.
 
-  // STEP 2: convert method to accept 2 numbers and adds them together, and then sets state 'sum' to result
-
-  // STEP 3: take the excel data, and add the body values together.
+  // React Unit Testing
 
   // Built to test *exactly* what you want to build, you knew this structure
   // was desired early on, and knew this is the way you wanted to implement it.
@@ -39,7 +47,6 @@ describe('<Additions />', () => {
   });
 
   /* 
-
   Next, you would write this test (or in this case just un-comment), and then write the code
   to make this test work.
   it('Has addNumbers() that accepts two numbers and sets state.sum with result' () => {
@@ -48,7 +55,6 @@ describe('<Additions />', () => {
     expect(additions.state().sum).toBe(4);
   })
   */
-  //
 
   /*
     Finally, you write this test with desired results, but in doing so you realize

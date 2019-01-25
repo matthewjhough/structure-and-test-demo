@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Additions } from './mathOperations';
+import { Additions } from './components';
 import logo from './logo.svg';
 import './App.css';
 
